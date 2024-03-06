@@ -20,8 +20,7 @@ public class StickPos : MonoBehaviour
                     ItemManager item = StickedObj.GetComponent<ItemManager>();
                     if(a != null){
                         a.Plus(item.thisItem);
-                        
-                        Debug.Log(a);
+
                     }else{
                         Debug.Log("waste");
                     }
