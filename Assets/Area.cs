@@ -38,7 +38,7 @@ public class Area : MonoBehaviour
     public void TextUpdate(){
         food.text = "食料"+current_food.ToString();
         water.text = "水"+current_water.ToString();
-        health.text = "健康"+current_water.ToString();
+        health.text = "健康"+current_health.ToString();
     }
     public void Plus(ItemType item){
         switch(item){
