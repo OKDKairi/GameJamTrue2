@@ -2772,6 +2772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StickPositions: []
+  sound: {fileID: 0}
 --- !u!1 &1393150671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3446,6 +3447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673629856}
   - component: {fileID: 1673629855}
+  - component: {fileID: 1673629857}
   m_Layer: 0
   m_Name: DustBox
   m_TagString: Untagged
@@ -3520,6 +3522,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1363878954}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1673629857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673629854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fd4d4d468d04479a0139db9393a667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StickPositions: []
+  sound: {fileID: 8300000, guid: d017caf9b8eb32440b6132a3caabb184, type: 3}
 --- !u!114 &1714874547 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2794110735953370912, guid: cf8d4b9bb0ac94bfe890912c23c272d4, type: 3}
