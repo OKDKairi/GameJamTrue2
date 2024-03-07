@@ -5,6 +5,9 @@ using UnityEngine;
 public class StickPos : MonoBehaviour
 {
     [SerializeField] List<Transform> StickPositions;
+    public AudioClip sound;
+    AudioSource audioSource;
+
     void Start(){
         GameDirector.stc = this;
         StickPositions = new List<Transform>(); 
@@ -22,6 +25,7 @@ public class StickPos : MonoBehaviour
                         a.Plus(item.thisItem);
 
                     }else{
+                        audioSource.PlayOneShot(sound);
                         Debug.Log("waste");
                     }
                     item.ItemDelete();

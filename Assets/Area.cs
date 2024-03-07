@@ -28,7 +28,10 @@ public class Area : MonoBehaviour
 
     public Text DaysText;
     public Text ScoreText;
-
+    
+    public AudioClip rightSound;
+    public AudioClip wrongSound;
+    AudioSource audioSource;
     void CountPacking(){
         count++;
         if(count == PackingInday){
@@ -36,11 +39,13 @@ public class Area : MonoBehaviour
             days++;
         }
     }
+    
 
     void Start()
     {
         ReSeed();
         TextUpdate();
+        audioSource = GetComponent<AudioSource>();
     }  
     private void ReSeed(){
         current_food = Random.Range(Min, Max + 1);
@@ -62,14 +67,18 @@ public class Area : MonoBehaviour
         switch(item){
             case ItemType.HealthPotion:
                 current_health += 2;
+                audioSource.PlayOneShot(rightSound);
                 break;
             case ItemType.Food:
                 current_food += 2;
+                audioSource.PlayOneShot(rightSound);
                 break;
             case ItemType.Water:
                 current_water += 2;
+                audioSource.PlayOneShot(rightSound);
                 break;
             case ItemType.Waste:
+                audioSource.PlayOneShot(wrongSound);
                 break;
         }
         TextUpdate();
