@@ -42,6 +42,21 @@ public class Area : MonoBehaviour
         current_food -= day_food;
         current_water -= day_water;
         current_health -= day_health;
+        if(current_food < 1){
+            current_food = 0;      
+            ItemDirector.id.ScoreUpdate(-200);
+        }
+
+        if(current_water < 1){
+            current_water = 0;
+            ItemDirector.id.ScoreUpdate(-200);            
+        }
+
+        if(current_health < 1){
+            current_health = 0;          
+            ItemDirector.id.ScoreUpdate(-200);  
+        }
+
         ItemTextUpdate();
     }
     
@@ -52,21 +67,26 @@ public class Area : MonoBehaviour
     }
     public void Plus(ItemType item){
         switch(item){
+            case ItemType.Waste:
+                audioSource.PlayOneShot(wrongSound);
+                ItemDirector.id.ScoreUpdate(-200);
+                break;
             case ItemType.HealthPotion:
                 current_health += 4;
                 audioSource.PlayOneShot(rightSound);
+                ItemDirector.id.ScoreUpdate(100);
                 break;
             case ItemType.Food:
                 current_food += 4;
                 audioSource.PlayOneShot(rightSound);
+                ItemDirector.id.ScoreUpdate(100);
                 break;
             case ItemType.Water:
                 current_water += 4;
                 audioSource.PlayOneShot(rightSound);
+                ItemDirector.id.ScoreUpdate(100);
                 break;
-            case ItemType.Waste:
-            audioSource.PlayOneShot(wrongSound);
-                break;
+            
         }
         ItemTextUpdate();
     }

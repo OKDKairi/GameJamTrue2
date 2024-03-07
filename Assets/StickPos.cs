@@ -20,7 +20,7 @@ public class StickPos : MonoBehaviour
                     ItemManager item = StickedObj.GetComponent<ItemManager>();
                     if(a != null){
                         a.Plus(item.thisItem);
-
+                        ItemDirector.id.CountPacking();
                     }else{
                         Debug.Log("waste");
                     }
