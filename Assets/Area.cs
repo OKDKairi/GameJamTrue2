@@ -19,6 +19,24 @@ public class Area : MonoBehaviour
     public Text food;
     public Text water;
     public Text health;
+
+    public int PackingInday;
+    private int count = 0;
+
+    private int days = 1;
+    private int score;
+
+    public Text DaysText;
+    public Text ScoreText;
+
+    void CountPacking(){
+        count++;
+        if(count == PackingInday){
+            count = 0;
+            days++;
+        }
+    }
+
     void Start()
     {
         ReSeed();
