@@ -20,31 +20,17 @@ public class Area : MonoBehaviour
     public Text water;
     public Text health;
 
-    public int PackingInday;
-    private int count = 0;
-
-    private int days = 1;
-    private int score;
-
-    public Text DaysText;
-    public Text ScoreText;
+    
     
     public AudioClip rightSound;
     public AudioClip wrongSound;
     AudioSource audioSource;
-    void CountPacking(){
-        count++;
-        if(count == PackingInday){
-            count = 0;
-            days++;
-        }
-    }
     
 
     void Start()
     {
         ReSeed();
-        TextUpdate();
+        ItemTextUpdate();
         audioSource = GetComponent<AudioSource>();
     }  
     private void ReSeed(){
@@ -56,9 +42,10 @@ public class Area : MonoBehaviour
         current_food -= day_food;
         current_water -= day_water;
         current_health -= day_health;
-        TextUpdate();
+        ItemTextUpdate();
     }
-    public void TextUpdate(){
+    
+    public void ItemTextUpdate(){
         food.text = "食料"+current_food.ToString();
         water.text = "水"+current_water.ToString();
         health.text = "健康"+current_health.ToString();
@@ -81,7 +68,7 @@ public class Area : MonoBehaviour
             audioSource.PlayOneShot(wrongSound);
                 break;
         }
-        TextUpdate();
+        ItemTextUpdate();
     }
     
 }
