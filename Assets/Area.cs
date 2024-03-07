@@ -66,19 +66,19 @@ public class Area : MonoBehaviour
     public void Plus(ItemType item){
         switch(item){
             case ItemType.HealthPotion:
-                current_health += 2;
+                current_health += 4;
                 audioSource.PlayOneShot(rightSound);
                 break;
             case ItemType.Food:
-                current_food += 2;
+                current_food += 4;
                 audioSource.PlayOneShot(rightSound);
                 break;
             case ItemType.Water:
-                current_water += 2;
+                current_water += 4;
                 audioSource.PlayOneShot(rightSound);
                 break;
             case ItemType.Waste:
-                audioSource.PlayOneShot(wrongSound);
+            audioSource.PlayOneShot(wrongSound);
                 break;
         }
         TextUpdate();
