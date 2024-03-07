@@ -72,17 +72,17 @@ public class Area : MonoBehaviour
                 ItemDirector.id.ScoreUpdate(-200);
                 break;
             case ItemType.HealthPotion:
-                current_health += 4;
+                current_health += 5;
                 audioSource.PlayOneShot(rightSound);
                 ItemDirector.id.ScoreUpdate(100);
                 break;
             case ItemType.Food:
-                current_food += 4;
+                current_food += 5;
                 audioSource.PlayOneShot(rightSound);
                 ItemDirector.id.ScoreUpdate(100);
                 break;
             case ItemType.Water:
-                current_water += 4;
+                current_water += 5;
                 audioSource.PlayOneShot(rightSound);
                 ItemDirector.id.ScoreUpdate(100);
                 break;
