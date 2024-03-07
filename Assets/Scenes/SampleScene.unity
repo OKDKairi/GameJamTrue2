@@ -4600,7 +4600,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Score
+  m_Text: 0
 --- !u!222 &1739785406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6676,9 +6676,20 @@ MonoBehaviour:
   Items:
   - {fileID: 7002604862565957623, guid: 8a145b5833d654d3ea16a67b6e471d56, type: 3}
   - {fileID: 6122055002765033010, guid: 0639d3088db0e4c1faffbae3c1dd075e, type: 3}
+  - {fileID: 1026467619733323733, guid: d78b3b302b5364d77968661c397c1684, type: 3}
+  - {fileID: 6143950694660252109, guid: 92312fa2f80ed449e81a37b4e0b3fa04, type: 3}
   - {fileID: 3863369424360390660, guid: 955dc5e3fb08e4f8299e67a3d3b849cc, type: 3}
+  - {fileID: 6173209491422072489, guid: 89e0e23bd64b54fc581a8cac74376e89, type: 3}
   - {fileID: 8927130543873866946, guid: bf503d10764864ab4910e867deecb5be, type: 3}
-  - {fileID: 324530718628140329, guid: 1caaa2708986a43fca63609dcdf57aa5, type: 3}
+  - {fileID: 2875091833983318091, guid: 18a18b9f244f94fb5b668ffb85ced04b, type: 3}
+  - {fileID: 8673127002388213702, guid: 715ae218dec704e9897e0ecbb1279744, type: 3}
+  - {fileID: 5414137649666649281, guid: 6bc3182b3edd84d21b8dc0956e12ae09, type: 3}
+  - {fileID: 1439647938799888797, guid: 572057785dd5b434188495fc63594f73, type: 3}
+  - {fileID: 8666045730125690329, guid: 67df75b054c9a4e6b8fbf6f56b563c1c, type: 3}
+  - {fileID: 4577102351925628807, guid: 1d5990e76919443f6aecf4ed57c8997e, type: 3}
+  - {fileID: 7678946362293425989, guid: a9ac52318566c41a18e534db0ed22323, type: 3}
+  - {fileID: 3547606034671335283, guid: b4fee4b73d3a04a6c8037f3769b4d548, type: 3}
+  - {fileID: 5150506931533603035, guid: 0741b98bce97e4b13971cb9089f27f95, type: 3}
   - {fileID: 1833160965165800314, guid: 04f28df172195427a97cd56898897934, type: 3}
   PackingInday: 4
   DaysText: {fileID: 1109429128}
